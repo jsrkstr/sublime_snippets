@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[
+App.views.${1:myview} = Backbone.View.extend({
+
+	template : \$("${2:selector}").html(),
+
+
+	events : {
+		${3:// bind events..}
+	},
+
+
+	initialize : function(${4:args}){
+		${5:// do something...}
+	},
+
+
+	render : function(){
+		${6:// do something...}
+		return this;
+	}
+
+});
+	]]>
+	</content>
+    <tabTrigger>bv</tabTrigger>
+    <scope>source.js</scope>
+    <description>Backbone View</description>
+</snippet>

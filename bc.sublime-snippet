@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+App.collections.${1:mycollection} = Backbone.Collection.extend({
+
+
+	url : ${2:// url...},
+
+	
+	model : App.models.${3:mymodel},
+
+
+	initialize : function(${4:args}){
+		${5:// do something...}
+	},
+
+
+	comparator : function(model){
+		return ${6:// some attr...};
+	}
+
+
+});
+	]]>
+	</content>
+    <tabTrigger>bc</tabTrigger>
+    <scope>source.js</scope>
+    <description>Backbone Collection</description>
+</snippet>

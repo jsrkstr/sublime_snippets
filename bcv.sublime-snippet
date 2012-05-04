@@ -1,0 +1,42 @@
+<snippet>
+    <content><![CDATA[
+App.views.${1:myview} = Backbone.View.extend({
+
+	template : \$("${2:selector}").html(),
+
+
+	events : {
+		${3://bind events..}
+	},
+
+
+	initialize : function(${4:args}){
+		${5:// do something...}
+	},
+
+
+	render : function(){
+		${6:// do something...}
+		this.addAll();
+		return this;
+	},
+
+
+	addAll : function(){
+		this.collection.each(function(model){
+			this.addOne(model);
+		});
+	},
+
+
+	addOne : function(model){
+		\$(this.el).${7:append}(this.template(model.toJSON()));
+	}
+
+});
+	]]>
+	</content>
+    <tabTrigger>bcv</tabTrigger>
+    <scope>source.js</scope>
+    <description>Backbone Collection View</description>
+</snippet>

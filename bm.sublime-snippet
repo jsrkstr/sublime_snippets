@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+App.models.${1:mymodel} = Backbone.Model.extend({
+
+	defaults : {
+		${2:// defaults...}
+	},
+
+
+	validate : function(attrs){
+		${3: // check attrs... return error to fail validation..}
+	},
+
+
+	initialize : function(${4:args}){
+		${5:// do something...}
+	}
+
+});
+	]]>
+	</content>
+    <tabTrigger>bm</tabTrigger>
+    <scope>source.js</scope>
+    <description>Backbone Model</description>
+</snippet>
